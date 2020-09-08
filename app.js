@@ -9,8 +9,6 @@ require("dotenv").config();
 
 // API ROUTES
 app.use("/api/v1/", routes);
-app.get("/test", (req, res) => {
-  res.send(process.env.DB_HOST);
-});
+
 app.listen(PORT, () => console.log("port up..."));
 
